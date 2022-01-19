@@ -1,0 +1,88 @@
+.Rectangle {
+    height: 56px;
+    margin: 0 0 0px;
+    padding: 8px 143px;
+    background-color: #09a04f;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .Oval {
+    width: 40px;
+    height: 40px;
+    margin: 0 8px 0 0;
+    padding: 0 0 1px;
+    background-color: #152d4e;
+  }
+
+  .PEEKaMEET {
+    width: 104px;
+    height: 24px;
+    margin: 8px 0 8px 8px;
+    font-family: CircularStd;
+    font-size: 18.8px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.4px;
+    color: #fff;
+  }
+
+  .Sign-In {
+    width: 51px;
+    height: 21px;
+    font-family: DMSans;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #fff;
+    margin-top: 10%;
+    margin-left: 21.8%;
+    margin-right: 19.5%;    
+    /* margin-bottom: 13.3%; */
+
+  }
+
+    .btnRectangle {
+    width: 87px;
+    height: 30px;
+    padding: 5px 15px 4px;
+    border-radius: 4px;
+    /* background-color: #fff; */
+    background-color: #09a04f;
+    margin-left: 60%;
+    /* margin-top: 1.2%; */
+    /* margin-bottom: 23.2%;    */
+    /* margin-right: 16.8%; */
+  }
+
+  
+  .signUpRectangle {
+    width: 87px;
+    height: 30px;
+    padding: 5px 15px 4px;
+    border-radius: 4px;
+    background-color: white;
+  }
+
+.Sign-Up {
+  width: 57px;
+  height: 21px;
+  font-family: DMSans;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: green;
+  margin-top: 5%;
+  margin-left: 17.2%;
+  margin-right: 17.2%;
+  margin-bottom: 13.3%;
+}
+  
