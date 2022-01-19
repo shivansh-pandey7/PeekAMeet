@@ -1,13 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import React from 'react';
 import SignIn from './pages/SignIn';
+import { Route, Router, Switch } from 'react-router-dom';
+import UserDetails from './pages/UserDetails';
+import ProtectedRoute from './components/ProtectedRoute';
+import { Redirect } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
 function App() {
+  const [isLoggedIn, setLoggedIn] = useState(false);
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    if(token) setLoggedIn(true);
+  }, [isLoggedIn]);
+
   return (
     <div className="">
-      <SignIn/>
+      {isLoggedIn ? <Redirect to='/user-details'/> : <Redirect to='/'/>}
+      <Switch>
+        <Route path='/' exact>
+          <SignIn></SignIn>
+        </Route>
+
+        <Route path='/user-details' exact>
+            <ProtectedRoute components={<UserDetails/>} />
+            
+        </Route>
+      </Switch>
     </div>
   );
 }

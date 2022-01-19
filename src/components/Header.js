@@ -2,6 +2,9 @@ import React from 'react'
 import './Header.css'
 
 const Header = () => {
+
+    const auth = localStorage.getItem('authenticated')
+
     return (
         <div className='Rectangle'>
 
@@ -19,6 +22,8 @@ const Header = () => {
                     Sign Up
                 </span>
             </div>
+
+        
             
         </div>
     )
