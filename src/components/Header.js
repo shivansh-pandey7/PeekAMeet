@@ -1,5 +1,6 @@
 import React from 'react'
 import './Header.css'
+import logo from '../assets/images/header_logo.png';
 
 const Header = () => {
 
@@ -8,7 +9,9 @@ const Header = () => {
     return (
         <div className='Rectangle'>
 
-            <div className='Oval'></div>
+            <div className=''>
+                <img height={38} width={38} src={logo}  />
+            </div>
             <span className="PEEKaMEET">
                 PEEKaMEET
             </span>
