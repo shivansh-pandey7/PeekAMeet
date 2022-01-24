@@ -4,31 +4,48 @@ import SignIn from './pages/SignIn';
 import { Route, Router, Switch } from 'react-router-dom';
 import UserDetails from './pages/UserDetails';
 import ProtectedRoute from './components/ProtectedRoute';
-import { Redirect } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import DisplayNotes from './pages/DisplayNotes';
+import AddNote from './pages/AddNote';
+import EditNote from './pages/EditNote';
 
-function App() {
-  const [isLoggedIn, setLoggedIn] = useState(false);
+function App() {  
+  const [isLoggedIn, setLoggedIn] = useState(true);
   useEffect(() => {
     const token = localStorage.getItem('token');
-    if(token) setLoggedIn(true);
+    if(token) setLoggedIn(false);
   }, [isLoggedIn]);
 
   return (
     <div className="">
-      {isLoggedIn ? <Redirect to='/user-details'/> : <Redirect to='/'/>}
+      
       <Switch>
         <Route path='/' exact>
-          <SignIn></SignIn>
+          <ProtectedRoute components={<UserDetails/>} />
         </Route>
-
+        <Route path='/sign-in' exact>
+          <ProtectedRoute components={<SignIn/>}/>
+        </Route>
         <Route path='/user-details' exact>
             <ProtectedRoute components={<UserDetails/>} />
-            
+        </Route>
+        <Route path='/display-notes' exact>
+            <ProtectedRoute components={<DisplayNotes/>}  />
+        </Route>
+        <Route path='/add-note' exact>
+            <ProtectedRoute components={<AddNote/>}  />
+        </Route>
+
+        <Route path='/edit-note/:noteId' exact>
+            <ProtectedRoute components={<EditNote/>}  />
         </Route>
       </Switch>
+
+      
     </div>
   );
 }
 
 export default App;
+
+

@@ -5,12 +5,13 @@ import newResponse from '../others/response';
 import './UserDetails.css';
 import axios from 'axios';
 import { useEffect } from 'react';
-import circleImage from '../assets/images/play-circle-filled.svg'
+
 import messageIcon from '../assets/images/icons8-envelope-48.png'
 import grid from '../assets/images/icons8-internet-50.png';
 import phone from '../assets/images/icons8-phone-24.png';
 import Footer from '../components/Footer'
 import SignedInHeader from '../components/SignedInHeader';
+import UserDetailHeader from '../components/UserDetailHeader';
 
 const UserDetails = () => {
     const ctx = useContext(UserDetailsContext);
@@ -19,6 +20,7 @@ const UserDetails = () => {
     useEffect(() => {
         axios.get( `http://apipeekameet.cloudzmall.com:3001/peekameet/api/v1/user/nearby/${userId}`)
         .then(function(response){
+            console.log("hello ----> ", response);
             ctx.setResponse(response);
         }).catch(function(error){
             ctx.setResponse(newResponse);
@@ -26,24 +28,7 @@ const UserDetails = () => {
     }, [])
     return (
         <div>
-            <SignedInHeader/>
-            <div className='bg-image'>
-                <img className='profile-image' height={100} width={100} src='https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png' />
-                {console.log(ctx.response)}
-            </div>
-
-            <div className='info'>
-                <p className='fullNameUser'>Name here</p>
-                <p className='designation'> CEO </p>
-                <p className='designation'>Gold Brand</p>
-                <img className='circleImage' src={circleImage}  />
-                
-                <div className='button-wrap'>
-                    <button className='btn'> Share </button>
-                    <button className='btn'> Edit Profile </button>
-                </div>
-
-            </div>
+            <UserDetailHeader/>
             <div className="Lorem-ipsum-dolor-si">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et eros sit amet sem viverra porttitor vel quis justo. Sed tempus, lorem suscipit vulputate mollis, mi dolor bibendum mi, non auctor nisi est nec nunc.<span className="text-style-1">More</span>
             </div>

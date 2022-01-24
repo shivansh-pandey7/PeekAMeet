@@ -1,0 +1,22 @@
+.addNotesBtn{
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    margin: 20px;
+    background-color: #09a04f;
+    color: white;
+    border: none;
+}
+
+.btnWrap{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.notesWrap{
+    /* background-color: red; */
+    margin: auto;
+    width: 40%;
+}
+

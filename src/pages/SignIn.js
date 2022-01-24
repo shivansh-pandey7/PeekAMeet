@@ -89,6 +89,8 @@ const SignIn = () => {
             console.log(localStorage.getItem('token'));
             history.replace('/user-details');
             // <---- signing In ----->
+        userDetailCtx.setLoader(false);
+
             
         }).catch(function(error){
                 console.log(userDetailCtx.loader);
@@ -100,10 +102,11 @@ const SignIn = () => {
                 localStorage.setItem('authenticated', true);
                 console.log(localStorage.getItem('token'));
                 history.replace('/user-details');
+                userDetailCtx.setLoader(false);
+
                 // <---- signing In ----->
             })
 
-        userDetailCtx.setLoader(false);
     }
     return (
         // {loader ? <Loader/> : 
