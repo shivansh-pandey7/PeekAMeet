@@ -1,5 +1,6 @@
 .Rectangle {
-    height: 56px;
+    min-height: 56px;
+    overflow: hidden;
     margin: 0 0 0px;
     padding: 8px 143px;
     background-color: #09a04f;
@@ -29,6 +30,11 @@
     color: #fff;
   }
 
+  .link-peek{
+    text-decoration: none;
+    color: #fff;
+  }
+
   .Sign-In {
     width: 51px;
     height: 21px;
@@ -47,7 +53,7 @@
 
   }
 
-    .btnRectangle {
+    .buttonWrapbtn {
         display: grid;
         grid-template-columns: 10% 15% 25% 25% 25%;
         gap: 2em;
@@ -57,7 +63,7 @@
     border-radius: 4px;
     /* background-color: #fff; */
     background-color: #09a04f;
-    margin-left: 600px;
+    margin-left: 60rem;
   }
 
   

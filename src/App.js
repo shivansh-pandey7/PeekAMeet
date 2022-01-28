@@ -1,13 +1,14 @@
 import './App.css';
 import React from 'react';
 import SignIn from './pages/SignIn';
-import { Route, Router, Switch } from 'react-router-dom';
+import { Redirect, Route, Router, Switch } from 'react-router-dom';
 import UserDetails from './pages/UserDetails';
 import ProtectedRoute from './components/ProtectedRoute';
 import { useState, useEffect } from 'react';
 import DisplayNotes from './pages/DisplayNotes';
 import AddNote from './pages/AddNote';
 import EditNote from './pages/EditNote';
+import SignInProtectedRoute from './components/SignInProtectedRoute';
 
 function App() {  
   const [isLoggedIn, setLoggedIn] = useState(true);
@@ -17,14 +18,14 @@ function App() {
   }, [isLoggedIn]);
 
   return (
-    <div className="">
+    <div className="App">
       
       <Switch>
         <Route path='/' exact>
           <ProtectedRoute components={<UserDetails/>} />
         </Route>
         <Route path='/sign-in' exact>
-          <ProtectedRoute components={<SignIn/>}/>
+          <SignInProtectedRoute components={<SignIn/>}/>    
         </Route>
         <Route path='/user-details' exact>
             <ProtectedRoute components={<UserDetails/>} />
@@ -38,6 +39,9 @@ function App() {
 
         <Route path='/edit-note/:noteId' exact>
             <ProtectedRoute components={<EditNote/>}  />
+        </Route>
+        <Route path='*'>
+            <Redirect to='/' />
         </Route>
       </Switch>
 

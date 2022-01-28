@@ -24,11 +24,17 @@ const AddNote = () => {
 
     const saveBtn = () => {
 
-        const obj = {note:note, date:date, time:time};
+        if(note && date && time){
+            const obj = {note:note, date:date, time:time};
+    
+            dispatch(addNote(obj));
+    
+            history.push('/display-notes');
+        }else {
+            alert("Error : Fill in all the fields");
+            return;
+        }
 
-        dispatch(addNote(obj));
-
-        history.push('/display-notes');
     }
 
 

@@ -9,16 +9,16 @@ import { useEffect } from 'react';
 import messageIcon from '../assets/images/icons8-envelope-48.png'
 import grid from '../assets/images/icons8-internet-50.png';
 import phone from '../assets/images/icons8-phone-24.png';
-import Footer from '../components/Footer'
-import SignedInHeader from '../components/SignedInHeader';
+import Footer from '../components/Footer';
 import UserDetailHeader from '../components/UserDetailHeader';
 
 const UserDetails = () => {
     const ctx = useContext(UserDetailsContext);
+    const token = localStorage.getItem('token');
     
     const userId = localStorage.getItem('userId');
     useEffect(() => {
-        axios.get( `http://apipeekameet.cloudzmall.com:3001/peekameet/api/v1/user/nearby/${userId}`)
+        axios.get( `http://apipeekameet.cloudzmall.com:3001/peekameet/api/v1/user/nearby`, {userId:userId, authorization:token})
         .then(function(response){
             console.log("hello ----> ", response);
             ctx.setResponse(response);
@@ -27,93 +27,95 @@ const UserDetails = () => {
         })
     }, [])
     return (
-        <div>
+        <div className=''>
             <UserDetailHeader/>
             <div className="Lorem-ipsum-dolor-si">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et eros sit amet sem viverra porttitor vel quis justo. Sed tempus, lorem suscipit vulputate mollis, mi dolor bibendum mi, non auctor nisi est nec nunc.<span className="text-style-1">More</span>
             </div>
+            
+            <div className=''>
 
-            <div className='skill-wrap'>
-                <div className='skill-margin'>
-                    <p className='Industrys'>Industry(s)</p>
-                    <div className='industry'>
-                        <div className="industry1">
-                            <span class="Web-Development">
-                            Web Development
-                        </span>
-                        </div>
-                        <div className="industry1">
-                            <span class="Web-Development">
-                            Fine Arts
-                        </span>
+                <div className='skill-wrap'>
+                    <div className='skill-margin'>
+                        <p className='Industrys'>Industry(s)</p>
+                        <div className='industry'>
+                            <div className="industry1">
+                                <span class="Web-Development">
+                                Web Development
+                            </span>
+                            </div>
+                            <div className="industry1">
+                                <span class="Web-Development">
+                                Fine Arts
+                            </span>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div className='skill-margin'>
-                    <p className='Industrys'>Organisations and Groups</p>
-                    <div className='industry'>
-                        <div className="orgAndGroups">
-                            <span class="orgAndGroupsDev">
-                            IAW
-                        </span>
-                        </div>
-                        <div className="orgAndGroups">
-                            <span class="orgAndGroupsDev">
-                            Denver Rugby
-                        </span>
+                    <div className='skill-margin'>
+                        <p className='Industrys'>Organisations and Groups</p>
+                        <div className='industry'>
+                            <div className="orgAndGroups">
+                                <span class="orgAndGroupsDev">
+                                IAW
+                            </span>
+                            </div>
+                            <div className="orgAndGroups">
+                                <span class="orgAndGroupsDev">
+                                Denver Rugby
+                            </span>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div className='skill-margin'>
-                    <p className='Industrys'>Interests and Activities</p>
-                    <div className='industry'>
-                        <div className="interestAndActivities">
-                            <span className="interestsAndActivitiesDev">
-                            Hiking
-                        </span>
-                        </div>
-                        <div className="interestAndActivities">
-                            <span className="interestsAndActivitiesDev">
-                            Professional Speaking  
-                        </span>
+                    <div className='skill-margin'>
+                        <p className='Industrys'>Interests and Activities</p>
+                        <div className='industry'>
+                            <div className="interestAndActivities">
+                                <span className="interestsAndActivitiesDev">
+                                Hiking
+                            </span>
+                            </div>
+                            <div className="interestAndActivities">
+                                <span className="interestsAndActivitiesDev">
+                                Professional Speaking  
+                            </span>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div className='skill-margin'>
-                    <p className='Industrys'>Alumni</p>
-                    <div className='industry'>
-                        <div className="alumni">
-                            <span class="alumniDev">
-                            UC Technology
-                        </span>
-                        </div>
-                        <div className="alumni">
-                            <span class="alumniDev">
-                            Spark Colorado
-                        </span>
-                        </div>
-                    </div>
-                </div>
-
-                <div className='skill-margin'>
-                    <p className='Industrys'>Languages</p>
-                    <div className='industry'>
-                        <div className="Languages">
-                            <span class="LanguagesDev">
-                            English
-                        </span>
-                        </div>
-                        <div className="Languages">
-                            <span class="LanguagesDev">
-                            Spanish
-                        </span>
+                    <div className='skill-margin'>
+                        <p className='Industrys'>Alumni</p>
+                        <div className='industry'>
+                            <div className="alumni">
+                                <span class="alumniDev">
+                                UC Technology
+                            </span>
+                            </div>
+                            <div className="alumni">
+                                <span class="alumniDev">
+                                Spark Colorado
+                            </span>
+                            </div>
                         </div>
                     </div>
+
+                    <div className='skill-margin'>
+                        <p className='Industrys'>Languages</p>
+                        <div className='industry'>
+                            <div className="Languages">
+                                <span class="LanguagesDev">
+                                English
+                            </span>
+                            </div>
+                            <div className="Languages">
+                                <span class="LanguagesDev">
+                                Spanish
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
-                
             </div>
 
             <div className='address-wrap'>

@@ -7,7 +7,7 @@ const ProtectedRoute = (props) => {
     if(token){
         return props.components;
     }else {
-        return <SignIn/>;
+        return <Redirect to='/sign-in'/>;
     }
 }
 

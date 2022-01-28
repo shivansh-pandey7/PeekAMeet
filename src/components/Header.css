@@ -1,10 +1,10 @@
 .Rectangle {
     height: 56px;
-    margin: 0 0 0px;
-    padding: 8px 143px;
+    /* margin: 0 0 0px; */
+    /* padding: 8px 143px; */
     background-color: #09a04f;
-    display: flex;
-    flex-wrap: wrap;
+    display: inline;
+    /* flex-wrap: wrap; */
   }
   
   .Oval {
@@ -36,7 +36,7 @@
     font-size: 16px;
     font-weight: bold;
     font-stretch: normal;
-    font-style: normal;
+    font-style: normal; 
     line-height: normal;
     letter-spacing: normal;
     color: #fff;
@@ -47,17 +47,14 @@
 
   }
 
-    .btnRectangle {
+    .signInRectangle {
     width: 87px;
     height: 30px;
     padding: 5px 15px 4px;
     border-radius: 4px;
     /* background-color: #fff; */
     background-color: #09a04f;
-    margin-left: 60%;
-    /* margin-top: 1.2%; */
-    /* margin-bottom: 23.2%;    */
-    /* margin-right: 16.8%; */
+    margin-left: 55em;
   }
 
   
@@ -67,6 +64,7 @@
     padding: 5px 15px 4px;
     border-radius: 4px;
     background-color: white;
+    margin-left: 3em;
   }
 
 .Sign-Up {

@@ -20,3 +20,46 @@
     width: 40%;
 }
 
+
+.expandedNote{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+    word-wrap: break-word;
+}
+
+
+.expandedNoteContent{
+    border-radius: 8px;
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+.expNote{
+    font-size: 18px;
+    color: #303533;
+}
+
+.expDT{
+    font-size: 14px;
+    margin: 10px;
+    color: rgb(58, 54, 54);
+}
+
+.loading{
+    text-align: center;
+    color: #09a04f;
+    font-size: 14px;
+    padding: 10px;
+}
+
