@@ -7,7 +7,6 @@ import newResponse from '../others/response'
 import './SignIn.css';
 import axios from 'axios';
 import UserDetailsContext from '../store/UserDetailsContext';
-
 import { useHistory } from 'react-router-dom';
 import LoadingOverlay from 'react-loading-overlay';
 
@@ -50,30 +49,9 @@ const SignIn = () => {
 
     const onSubmit = () => {
 
-        if(email){
-            if(emailIsValid() === true){
-                setValidEmail(false);
-            }else {
-                setValidEmail(true);
-                return;
-            }
-            
-            if(passIsValid() === true){
-                setValidPassword(false);
-            }else {
-                setValidPassword(true);
-                return;
-            }
-            
-            
-            console.log(email, password);
-        }else {
-            console.log('not valid')
-            setValidPassword(true);
-            setValidEmail(true);
-            return;
-        }
-        userDetailCtx.setLoader(true);
+        if(email === 'bhagyashree.srivastava@daffodilsw.com' && password === 'Hrhk@1234'){
+
+            userDetailCtx.setLoader(true);
         
         axios.post('http://apipeekameet.cloudzmall.com:3001/peekameet/api/v1/public/user/login',
         {email: email, password : password})
@@ -89,7 +67,7 @@ const SignIn = () => {
             console.log(localStorage.getItem('token'));
             history.replace('/user-details');
             // <---- signing In ----->
-        userDetailCtx.setLoader(false);
+            userDetailCtx.setLoader(false);
 
             
         }).catch(function(error){
@@ -106,6 +84,30 @@ const SignIn = () => {
 
                 // <---- signing In ----->
             })
+            // if(emailIsValid() === true){
+            //     setValidEmail(false);
+            // }else {
+            //     setValidEmail(true);
+            //     return;
+            // }
+            
+            // if(passIsValid() === true){
+            //     setValidPassword(false);
+            // }else {
+            //     setValidPassword(true);
+            //     return;
+            // }
+            
+            
+            // console.log(email, password);
+        }else {
+            console.log('not valid')
+            // setValidPassword(true);
+            // setValidEmail(true);
+            alert('Wrong Username or Password !');
+            return;
+        }
+        
 
     }
     return (
@@ -123,7 +125,7 @@ const SignIn = () => {
                                 className="Group-18"/>
                             <div>
                                 <span className="PEEKaMEET-lets-you-n">
-                                <span className="text-style-1">PEEKaMEET</span>lets you network more effectively to achieve your business and career goals
+                                <span className="text-style-1">PEEKaMEET </span>lets you network more effectively to achieve your business and career goals
                                 </span>
                                 <div className='wrap'>
                                     <div class="freelancer">
@@ -196,7 +198,7 @@ const SignIn = () => {
                                     <span className="Dont-have-an-accoun">
                                         Don’t have an account?
                                     </span>
-                                    <span className="Sign-Up">
+                                    <span className="Sign-Up-here">
                                         Sign Up
                                     </span>
                                 </div>

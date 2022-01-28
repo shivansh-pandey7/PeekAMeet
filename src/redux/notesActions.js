@@ -14,6 +14,7 @@ export const getNextData = (pg) => {
         try{
             const nextDataSet = await fetchData(pg);
             dispatch(notesActions.gettingData(nextDataSet));
+            dispatch(notesActions.load(false));
         }catch (error) {
             alert('error');
         }
@@ -49,6 +50,7 @@ export const editNote = (obj) => {
 
         try{
             const data = await editData(obj);
+            obj.id = +obj.id;
             dispatch(notesActions.editingNote(obj));
         }catch(error){
             alert(error);
@@ -65,7 +67,7 @@ export const deleteNote = (id) => {
         }
 
         try {
-            const data  = await deleteData(id);
+            await deleteData(id);
             dispatch(notesActions.deletingNote(id));
         }catch (error){
             alert(error);

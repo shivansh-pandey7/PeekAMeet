@@ -4,7 +4,7 @@ import share from '../assets/images/share-24-px.svg';
 import groupCopy from '../assets/images/group-copy.svg';
 import menuLine from '../assets/images/menu-line.svg';
 import './SignedInHeader.css';
-import { Link, useHistory } from 'react-router-dom';
+import { Link, NavLink, useHistory } from 'react-router-dom';
 import logo from '../assets/images/header_logo.png';
 
 
@@ -18,14 +18,15 @@ const SignedInHeader = () => {
     return (
         <div className='Rectangle'>
 
+            
             <div className=''>
-                <img height={38} width={38} src={logo}  />
+                <img height={38} width={38} style={{"border-radius":"20px"}} src={logo}  />
             </div>
             <span className="PEEKaMEET">
-                PEEKaMEET
+                <NavLink className='link-peek' to='/user-details'><span>PEEKaMEET</span></NavLink>
             </span>
 
-            <div className='btnRectangle'>
+            <div className='buttonWrapbtn'> 
                 <img src={add} className='image-style' />
                 <img src={share} className='image-style'/>
                 <Link to='/display-notes'><img src={groupCopy} className='image-style'/></Link>

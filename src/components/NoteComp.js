@@ -37,16 +37,21 @@ const NoteComp = (props) => {
         console.log('edit clickedeeeeeeeeeeeeeeee');
         history.push(`/edit-note/${props.id}`);
     }
+
+    const expandNote = () => {
+        props.noteClick({note:props.note, date:props.date,time:props.time});
+
+    }
     return (
         <div onClick={toggleMenu} className='notes-wrap'>
-            <p>{props.note}</p>
+            <p className='props-notes' onClick={expandNote}>{props.note.length > 30 ? props.note.substring(0, 40) + "..." : props.note }</p>
 
             <div className=''>
-                <img height={28} width={28}  src={menuIconImg} className={menuIcon} />
+                <img height={28} onClick={toggleMenu} width={28}  src={menuIconImg} className={menuIcon} />
                 <div id='togMenu' className={menuClass}>
-                    <button className='delete-btn'>
+                    <button onClick={editClicked} className='delete-btn'>
                         <img src={edit} />
-                        <span className='date-info' onClick={editClicked}>Edit</span>
+                        <span className='date-info' >Edit</span>
                     </button> 
 
                     <button onClick={deleteClicked} className='delete-btn'>

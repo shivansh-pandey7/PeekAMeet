@@ -7,6 +7,7 @@
     background-color: #fff;
     display: grid;
     grid-template-columns: 50% 50%;
+    font-family: DMSans-Bold, sans-serif;
   }
 
   .signInLayout{
@@ -214,7 +215,7 @@
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #9ea0a3;
+  color: #525355;
 }
 .Rectangle-Copy-6 {
   width: 400px;
@@ -276,7 +277,7 @@
 }
 
 .Dont-have-an-accoun {
-  width: 153px;
+  width: 10px;
   height: 18px;
   /* margin: 0 4px 0 0 */
   margin-left: 190px;
@@ -291,7 +292,7 @@
   color: #000;
 }
 
-.Sign-Up {
+.Sign-Up-here {
   width: 51px;
   height: 18px;
   margin: 0 0 0 0px;

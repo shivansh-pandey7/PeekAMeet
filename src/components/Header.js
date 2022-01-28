@@ -10,13 +10,13 @@ const Header = () => {
         <div className='Rectangle'>
 
             <div className=''>
-                <img height={38} width={38} src={logo}  />
+                <img height={38} width={38} style={{"border-radius":"20px"}} src={logo}  />
             </div>
             <span className="PEEKaMEET">
                 PEEKaMEET
             </span>
 
-            <div className='btnRectangle'>
+            <div className='signInRectangle'>
                 <span className="Sign-In">Sign In</span>
             </div>
 
