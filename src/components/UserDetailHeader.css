@@ -1,0 +1,63 @@
+.bg-image{
+    background-color: #09a04f;
+    height: 15vh;
+    text-align: center;
+}
+
+.profile-image{
+    /* margin-left: 700px; */
+    margin-top: 50px;
+    border-radius: 100px;
+}
+
+.info{
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+
+.fullNameUser {
+    font-family: DMSans;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    /* text-align: center; */
+    color: #152d4e;
+  }
+
+.designation {
+    font-family: DMSans;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    /* text-align: center; */
+    color: #152d4e;
+}
+
+.circleImage{
+    margin-top: 20px;
+
+}
+
+.button-wrap{
+    margin-top: 30px;
+
+}
+
+.btn {
+    width: 135px; 
+    height: 30px;
+    /* margin: 0 16px 0 0; */
+    border: none;
+    border-radius: 4px;
+    background-color: #14b349;
+    color: white;
+    margin-left: 20px
+}

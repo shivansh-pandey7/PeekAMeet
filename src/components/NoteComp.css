@@ -1,0 +1,85 @@
+.notes-wrap{
+    box-shadow: 10px 5px 5px rgb(186, 185, 185);
+    border-color: white white white white ;
+    border-style:solid;
+    border-left-color: rgb(50, 197, 50);
+    border-radius: 8px;
+    min-height: 80px;
+    padding: 6px;
+    font-size: 15px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}  
+
+.date-info{
+    /* color: gray; */
+    font-size: 12px;
+    margin: 8px;
+}
+
+.wrapping-flex{ 
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.margin{
+    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.delete-btn{
+    height: 30px;
+    text-align: center;
+    border: none;
+    margin-left: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+.menu-visible{
+    width: 100px;
+    position: relative;
+    float: right;
+
+    margin-top: -50px;
+    padding: 10px;
+    margin-left: 500px;
+    visibility: visible;
+}
+
+.menu-hidden{
+    width: 100px;
+    position: absolute;
+    margin-top: -50px;
+    padding: 10px;
+    margin-left: 500px;
+    visibility: hidden;
+}
+
+.icon-hidden{
+    position: absolute;
+    margin-top: -50px;
+    padding: 10px;
+    margin-left: 500px;
+    visibility: hidden;
+    /* z-index: 1; */
+}
+
+.icon-visible{
+    /* z-index: 1; */
+    /* position: absolute; */
+    float: right;
+    /* vertical-align: top; */
+
+    margin-top: -50px;
+    padding: 10px;
+    margin-left: 550px;
+    visibility: visible;
+}
+
+.props-notes{
+    width: 25em;
+    word-wrap: break-word;
+}

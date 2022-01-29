@@ -1,0 +1,341 @@
+.bg-image{
+    background-color: #09a04f;
+    height: 15vh;
+    text-align: center;
+}
+
+.profile-image{
+    /* margin-left: 700px; */
+    margin-top: 50px;
+    border-radius: 100px;
+}
+
+.info{
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+.fullNameUser {
+    font-family: DMSans;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    /* text-align: center; */
+    color: #152d4e;
+  }
+
+  .designation {
+    font-family: DMSans;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    /* text-align: center; */
+    color: #152d4e;
+  }
+
+  .circleImage{
+      margin-top: 20px;
+
+  }
+
+  .button-wrap{
+      margin-top: 30px;
+
+  }
+
+  .btn {
+      
+    width: 135px; 
+    height: 30px;
+    /* margin: 0 16px 0 0; */
+    border: none;
+    border-radius: 4px;
+    background-color: #14b349;
+    color: white;
+    margin-left: 20px
+    
+  }
+
+  .Lorem-ipsum-dolor-si {
+    width: 288px;
+    height: 80px;
+    font-family: DMSans;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #152d4e;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    margin-top: 30px;
+  }
+  
+  .Lorem-ipsum-dolor-si .text-style-1 {
+    color: #14b349;
+  }
+
+  .Industrys {
+    /* margin: 0 97px 8px 0; */
+    /* background-color: #9ea0a3; */
+    font-family: DMSans;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #9ea0a3;
+  }
+
+  .industry{
+        display: flex;
+        flex-wrap: wrap;
+  }
+
+  .industry1 {
+    text-align: center;
+    width: 125px;
+    height: 25px;
+    margin: 8px 4px 0 0;
+    padding: 7px 14px 8px 0;
+    border-radius: 17.5px;
+    background-color: rgba(241, 124, 43, 0.18);
+  }
+
+  .Web-Development {
+    width: 126px;
+    height: 18px;
+    margin: 2px 0 0 14px;
+    /* background-color: #f17c2b; */
+    font-family: DMSans;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #f17c2b;
+  }
+
+  .orgAndGroups {
+    text-align: center;
+    width: 125px;
+    height: 25px;
+    margin: 8px 4px 0 0;
+    padding: 7px 14px 8px 0;
+    border-radius: 17.5px;
+    background-color: rgba(150, 54, 143, 0.18)
+        ;
+  }
+
+  .orgAndGroupsDev {
+    width: 126px;
+    height: 18px;
+    margin: 2px 0 0 14px;
+    /* background-color: #f17c2b; */
+    font-family: DMSans;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #96368f
+    ;
+  }
+
+
+  .interestAndActivities {
+    text-align: center;
+    width: 125px;
+    height: 35px;
+    margin: 8px 4px 0 0;
+    padding: 7px 14px 8px 0;
+    border-radius: 17.5px;
+    background-color:rgba(26, 150, 145, 0.18);
+  }
+
+  .interestsAndActivitiesDev {
+    width: 126px;
+    height: 18px;
+    margin: 2px 0 0 14px;
+    /* background-color: #f17c2b; */
+    font-family: DMSans;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #1a9691;
+  }
+
+
+  .orgAndGroups {
+    text-align: center;
+    width: 125px;
+    height: 25px;
+    margin: 8px 4px 0 0;
+    padding: 7px 14px 8px 0;
+    border-radius: 17.5px;
+    background-color: rgba(150, 54, 143, 0.18)
+        ;
+  }
+
+  .orgAndGroupsDev {
+    width: 126px;
+    height: 18px;
+    margin: 2px 0 0 14px;
+    /* background-color: #f17c2b; */
+    font-family: DMSans;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #96368f
+    ;
+  }
+
+  .alumni {
+    text-align: center;
+    width: 125px;
+    height: 25px;
+    margin: 8px 4px 0 0;
+    padding: 7px 14px 8px 0;
+    border-radius: 17.5px;
+    background-color: rgba(230, 49, 131, 0.18);
+  }
+
+  .alumniDev {
+    width: 126px;
+    height: 18px;
+    margin: 2px 0 0 14px;
+    /* background-color: #f17c2b; */
+    font-family: DMSans;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #e63183;
+  }
+
+  .skill-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    column-gap: 10em;
+
+    flex-direction: row;
+  }
+
+
+
+
+
+  .Languages {
+    text-align: center;
+    width: 125px;
+    height: 25px;
+    margin: 8px 4px 0 0;
+    padding: 7px 14px 8px 0;
+    border-radius: 17.5px;
+    background-color: rgba(0, 128, 175, 0.17);
+  }
+
+  .LanguagesDev {
+    width: 126px;
+    height: 18px;
+    margin: 2px 0 0 14px;
+    /* background-color: #f17c2b; */
+    font-family: DMSans;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #0080af;
+  }
+
+  .skill-margin{
+      margin-left: 20px;
+      
+      /* margin-top: 10px; */
+  }
+
+
+  .jgainesgmailcom {
+    width: 146px;
+    height: 21px;
+    margin: 0 0 3px 14px;
+    background-color: var(--algae-green);
+    font-family: DMSans;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #1cb54f;
+  }
+
+  .contact-info{
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 8px;
+  }
+
+  .Business-Address {
+    width: 98px;
+    height: 16px;
+    margin: 0 58px 4px 0;
+    /* background-color: #9ea0a3; */
+    font-family: DMSans;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #9ea0a3;
+  }
+
+  .Address{
+    font-size: 16px;
+    width: 140px;
+  }
+
+  .address-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 2em;
+  }
+
+  .address-margin{
+    margin-top: 40px;
+    /* margin-left: 120px; */
+  }
+
+  .test-wrap{
+    /* text-align: center; */
+    /* justify-content: center;
+     */
+     text-align: center;
+    /* display: block; */
+  }
